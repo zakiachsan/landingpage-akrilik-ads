@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, Check, Clock, Shield, Gift, Star, ChevronRight, Building2, UtensilsCrossed, Briefcase, MapPin, Mail } from "lucide-react";
+import { Phone, Check, Clock, Shield, Gift, Star, Building2, UtensilsCrossed, Briefcase, MapPin, Mail } from "lucide-react";
 
 const brands = [
   "RS Medika", "Hotel Grand", "RM Sederhana", "Kantor ABC", "RS Sejahtera",

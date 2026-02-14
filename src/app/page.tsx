@@ -56,43 +56,53 @@ const useCases = [
 
 const products = [
   {
-    id: "full-akrilik",
-    name: "Full Acrylic Premium",
-    tagline: "Tampilan paling bersih dan solid. Cocok untuk penggunaan jangka panjang.",
-    discount: null,
-    imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770227212/full_akrilik_vioros.webp",
-    benefits: ["Tidak pakai pin — dinding aman", "Mudah ganti isi poster", "Tampilan tetap rapi"],
-    details: [
-      { label: "Bahan", value: "Acrylic Bening 3 mm Double Layer" },
-      { label: "Cetak", value: "Artpaper 260 gsm" },
-      { label: "Pemasangan", value: "Baut stainless + skrup" },
-    ],
+    id: "frame-dinding",
+    name: "Frame Dinding",
+    tagline: "Wall mount untuk sertifikat & izin usaha",
+    description: "Frame akrilik premium dipasang di dinding dengan baut stainless. Cocok untuk sertifikat halal, izin usaha, penghargaan.",
+    imageUrl: "/products/frame-dinding.jpg",
+    sizes: ["A2 (65x45cm)", "A3 (45x36cm)", "A4 (27x35.7cm)", "A5 (20.8x27cm)", "A6 (16.5x20.8cm)"],
+    popular: true,
   },
   {
-    id: "akrilik-mdf",
-    name: "Acrylic + MDF",
-    tagline: "Tampilan profesional dengan harga lebih efisien.",
-    discount: "Hingga 30% lebih terjangkau",
-    imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770227216/akrilik_dan_adf_tckz5f.webp",
-    benefits: ["Tidak pakai pin — dinding aman", "Mudah ganti isi poster", "Tampilan tetap rapi"],
-    details: [
-      { label: "Bahan", value: "Depan Acrylic 3 mm, Belakang MDF 3 mm" },
-      { label: "Cetak", value: "Artpaper 260 gsm" },
-      { label: "Pemasangan", value: "Baut stainless + skrup" },
-    ],
+    id: "frame-pen",
+    name: "Frame Pen",
+    tagline: "Standing frame untuk sertifikat di meja",
+    description: "Frame dengan kaki untuk ditaruh di meja. Ideal untuk sertifikat, piagam penghargaan, dan dokumen penting.",
+    imageUrl: "/products/frame-pen.jpg",
+    sizes: ["A4 (27x35.7cm)", "A5 (20.8x27cm)", "A6 (16.5x20.8cm)"],
   },
   {
-    id: "full-pvc",
-    name: "Full PVC Economy",
-    tagline: "Solusi paling hemat untuk kebutuhan budget-sensitive.",
-    discount: "Hingga 50% lebih terjangkau",
-    imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770227422/fullpvc_mysysq.webp",
-    benefits: ["Tidak pakai pin — dinding aman", "Mudah ganti isi poster", "Tampilan tetap rapi"],
-    details: [
-      { label: "Bahan", value: "PVC Premium 3 mm finishing glossy" },
-      { label: "Cetak", value: "Artpaper 260 gsm" },
-      { label: "Pemasangan", value: "Double tape 3M" },
-    ],
+    id: "frame-magnet",
+    name: "Frame Magnet",
+    tagline: "Praktis ganti foto dengan sistem magnet",
+    description: "Frame akrilik dengan sistem magnet, mudah buka-tutup untuk ganti foto. Tampilan bersih tanpa baut terlihat.",
+    imageUrl: "/products/frame-magnet.jpg",
+    sizes: ["3R (10.89x14.7cm)", "4R (12.16x17.24cm)", "5R (14.7x19.78cm)", "6R (17.24x22.32cm)"],
+  },
+  {
+    id: "frame-bingkai",
+    name: "Frame Bingkai",
+    tagline: "Frame foto dengan kaki akrilik elegan",
+    description: "Frame foto dengan baut di pojok dan kaki akrilik. Tampilan elegan untuk foto keluarga atau kenangan.",
+    imageUrl: "/products/frame-bingkai.jpg",
+    sizes: ["3R (10.89x14.7cm)", "4R (12.16x17.24cm)", "5R (14.7x19.78cm)", "6R (17.24x22.32cm)"],
+  },
+  {
+    id: "frame-standing-meja",
+    name: "Frame Standing Meja",
+    tagline: "Desktop frame dengan base akrilik solid",
+    description: "Standing frame dengan base akrilik tebal di bawah. Kokoh dan elegan untuk meja kerja atau resepsionis.",
+    imageUrl: "/products/frame-standing-meja.jpg",
+    sizes: ["A4 (27x35.7cm)", "A5 (20.8x27cm)", "A6 (16.5x20.8cm)"],
+  },
+  {
+    id: "frame-standing-lantai",
+    name: "Frame Standing Lantai",
+    tagline: "Floor stand untuk pameran & event",
+    description: "Tiang akrilik berdiri untuk display di pameran, showroom, atau event. Tinggi 1 meter, eye-catching.",
+    imageUrl: "/products/frame-standing-lantai.jpg",
+    sizes: ["30x28x100cm"],
   },
 ];
 
@@ -145,7 +155,6 @@ const testimonials = [
 
 export default function LandingPage() {
   const [activeUseCase, setActiveUseCase] = useState(useCases[0]);
-  const [activeProduct, setActiveProduct] = useState(products[0]);
 
   const whatsappLink = "https://wa.me/6281213848845?text=Halo,%20saya%20ingin%20info%20frame%20akrilik";
 
@@ -248,99 +257,67 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Pilih Frame Sesuai Kebutuhan & Budget
+              Pilih Frame Sesuai Kebutuhan
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Semua varian dibuat rapi, mudah dipasang, dan siap dipakai di area publik. Sudah termasuk kelengkapan pemasangan.
+              Tersedia berbagai jenis frame akrilik premium untuk kebutuhan bisnis dan personal Anda.
             </p>
           </div>
 
-          {/* Product Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 max-w-4xl mx-auto">
+          {/* Product Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {products.map((product) => (
-              <button
+              <div
                 key={product.id}
-                onClick={() => setActiveProduct(product)}
-                className={`relative px-4 md:px-6 py-3 rounded-full font-semibold transition-all text-sm md:text-base ${
-                  activeProduct.id === product.id
-                    ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30"
-                    : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+                className={`bg-white rounded-2xl overflow-hidden shadow-lg border-2 transition-all hover:shadow-xl hover:-translate-y-1 ${
+                  product.popular ? "border-blue-500 relative" : "border-transparent"
                 }`}
               >
-                {product.name}
-                {product.discount && (
-                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">
-                    Promo
-                  </span>
+                {product.popular && (
+                  <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold z-10">
+                    TERLARIS
+                  </div>
                 )}
-              </button>
-            ))}
-          </div>
-
-          {/* Selected Product Detail */}
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-              {/* Discount Badge */}
-              {activeProduct.discount && (
-                <div className="bg-red-500 text-white text-sm font-semibold text-center py-2 px-4">
-                  {activeProduct.discount}
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <img 
+                    src={product.imageUrl} 
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              )}
-
-              <div className="grid md:grid-cols-2 gap-0">
-                {/* Product Image */}
-                <div className="aspect-square md:aspect-auto bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center overflow-hidden">
-                  {activeProduct.imageUrl ? (
-                    <img
-                      src={activeProduct.imageUrl}
-                      alt={activeProduct.name}
-                      className="w-full h-full object-cover object-[30%_center]"
-                    />
-                  ) : (
-                    <div className="text-center p-8">
-                      <div className="w-24 h-24 mx-auto bg-blue-500/20 rounded-2xl flex items-center justify-center mb-4">
-                        <span className="text-4xl">🖼️</span>
-                      </div>
-                      <span className="text-lg text-blue-700 font-semibold">Frame Akrilik</span>
-                    </div>
-                  )}
-                </div>
-
-                {/* Product Info */}
-                <div className="p-6 md:p-8 flex flex-col justify-center">
-                  <div className="mb-4">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2">{activeProduct.name}</h3>
-                    <p className="text-gray-600">{activeProduct.tagline}</p>
-                  </div>
-
-                  {/* Manfaat */}
-                  <div className="mb-4">
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Praktis Dipasang, Mudah Diupdate</h4>
-                    <div className="space-y-2">
-                      {activeProduct.benefits.map((benefit, idx) => (
-                        <div key={idx} className="flex items-center gap-2">
-                          <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
-                          <span className="text-gray-700 text-sm">{benefit}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Detail Teknis */}
-                  <div className="bg-gray-50 rounded-xl p-4 border border-gray-100">
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Detail Teknis</h4>
-                    <div className="space-y-2">
-                      {activeProduct.details.map((detail, idx) => (
-                        <div key={idx} className="flex items-start gap-2 text-sm">
-                          <span className="text-gray-500 min-w-[80px]">{detail.label}:</span>
-                          <span className="text-gray-700">{detail.value}</span>
-                        </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold text-gray-800 mb-1">{product.name}</h3>
+                  <p className="text-blue-600 text-sm font-medium mb-3">{product.tagline}</p>
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">{product.description}</p>
+                  
+                  <div className="bg-blue-50 rounded-lg p-3">
+                    <p className="font-semibold text-gray-700 text-xs mb-2 uppercase tracking-wide">Ukuran Tersedia:</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {product.sizes.map((size, i) => (
+                        <span 
+                          key={i} 
+                          className="inline-block bg-white text-gray-700 px-2 py-1 rounded text-xs border border-blue-100"
+                        >
+                          {size}
+                        </span>
                       ))}
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl transition-all"
+            >
+              <Phone className="w-5 h-5" />
+              Tanya Harga & Stok
+            </a>
           </div>
 
           {/* CTA */}

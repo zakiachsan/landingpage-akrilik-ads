@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, Check, Clock, Shield, Gift, Star, Frame, Layers, Sparkles, MapPin, Mail } from "lucide-react";
+import { Phone, Check, Clock, Shield, Star, Frame, Layers, Sparkles, MapPin, Mail } from "lucide-react";
 
 const brands = [
   "Honda Dealer", "Peugeot Showroom", "Prestige Auto", "Luxury Boutique", "Premium Gallery",

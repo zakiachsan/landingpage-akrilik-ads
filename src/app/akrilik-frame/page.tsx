@@ -9,35 +9,35 @@ import {
 
 const useCases = [
   {
-    id: "rumah-sakit",
-    title: "Rumah Sakit",
+    id: "showroom",
+    title: "Showroom",
     icon: Building2,
-    description: "Jadwal dokter, informasi layanan, dan arahan pengunjung yang selalu update dan mudah dibaca.",
-    benefits: ["Mudah diupdate", "Tahan lama", "Tampilan rapi"],
+    description: "Display brosur dan katalog produk di showroom mobil, properti, atau elektronik dengan tampilan premium.",
+    benefits: ["Tampilan premium", "Multi pocket", "Easy access"],
+    imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203324/Akrilik_frame_hotel_hz2mkg.webp",
+  },
+  {
+    id: "retail",
+    title: "Retail Store",
+    icon: Building2,
+    description: "Frame display untuk produk branded di toko retail, boutique, dan counter mall.",
+    benefits: ["Brand image", "Eye-catching", "Durable"],
     imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203324/Akrilik_frame_rumah_sakit_nhm1sx.webp",
   },
   {
     id: "hotel",
-    title: "Hotel",
-    icon: Building2,
-    description: "Info fasilitas, welcome guest, dan promo yang terlihat profesional di area resepsionis dan lift.",
-    benefits: ["Tampilan elegan", "Mudah dibaca", "Kesan premium"],
-    imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203324/Akrilik_frame_hotel_hz2mkg.webp",
-  },
-  {
-    id: "restoran",
-    title: "Restoran",
+    title: "Hotel & Lobby",
     icon: UtensilsCrossed,
-    description: "Menu dan promo yang menarik perhatian pelanggan dan mudah diganti sesuai kebutuhan.",
-    benefits: ["Menu jelas", "Mudah ganti", "Higienis"],
+    description: "Brochure holder dan display informasi untuk area resepsionis dan lobby hotel.",
+    benefits: ["Elegan", "Informatif", "Profesional"],
     imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203326/Akrilik_frame_restoran_ddxrj2.webp",
   },
   {
     id: "office",
-    title: "Office",
+    title: "Corporate Office",
     icon: Briefcase,
-    description: "Pengumuman internal, info meeting, dan company values yang tampil profesional.",
-    benefits: ["Komunikasi efektif", "Profesional", "Mudah update"],
+    description: "Frame untuk sertifikat, penghargaan, dan dokumen penting di kantor.",
+    benefits: ["Rapi", "Prestisius", "Tahan lama"],
     imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203325/Akrilik_frame_kantor_dr1ual.webp",
   },
 ];
@@ -54,115 +54,115 @@ const products = [
     label: "Paling Populer",
   },
   {
-    id: "frame-pen",
-    name: "Frame Pen",
-    tagline: "Standing frame untuk sertifikat di meja",
-    description: "Frame dengan kaki untuk ditaruh di meja. Ideal untuk sertifikat, piagam penghargaan, dan dokumen penting.",
+    id: "brochure-holder",
+    name: "Brochure Holder",
+    tagline: "Display brosur elegan multi pocket",
+    description: "Tempat brosur akrilik dengan desain minimalis. Tersedia single dan multi pocket untuk berbagai kebutuhan.",
     imageUrl: "/products/frame-pen.jpg",
-    sizes: ["A4", "A5", "A6"],
+    sizes: ["A4 Single", "A4 Double", "A5 Triple"],
     label: "Best Seller",
   },
   {
-    id: "frame-magnet",
-    name: "Frame Magnet",
-    tagline: "Praktis ganti foto dengan sistem magnet",
-    description: "Frame akrilik dengan sistem magnet, mudah buka-tutup untuk ganti foto. Tampilan bersih tanpa baut terlihat.",
+    id: "display-stand",
+    name: "Display Stand",
+    tagline: "Standing display untuk produk branded",
+    description: "Standing display akrilik untuk showcase produk. Cocok untuk showroom, retail, dan pameran.",
     imageUrl: "/products/frame-magnet.jpg",
-    sizes: ["3R", "4R", "5R", "6R"],
+    sizes: ["A4 Desktop", "A3 Floor", "Custom"],
     label: "Favorit",
   },
   {
-    id: "frame-bingkai",
-    name: "Frame Bingkai",
-    tagline: "Frame foto dengan kaki akrilik elegan",
-    description: "Frame foto dengan baut di pojok dan kaki akrilik. Tampilan elegan untuk foto keluarga atau kenangan.",
+    id: "menu-holder",
+    name: "Menu Holder",
+    tagline: "Tent card untuk restoran & cafe",
+    description: "Menu holder akrilik untuk meja restoran. Desain tent card yang stabil dan elegan.",
     imageUrl: "/products/frame-bingkai.jpg",
-    sizes: ["3R", "4R", "5R", "6R"],
+    sizes: ["A5", "A6", "Custom"],
   },
   {
-    id: "frame-standing-meja",
-    name: "Frame Standing Meja",
-    tagline: "Desktop frame dengan base akrilik solid",
-    description: "Standing frame dengan base akrilik tebal di bawah. Kokoh dan elegan untuk meja kerja atau resepsionis.",
+    id: "poster-frame",
+    name: "Poster Frame",
+    tagline: "Frame poster dengan sistem magnet",
+    description: "Frame akrilik untuk poster dengan sistem magnet. Mudah ganti konten tanpa baut.",
     imageUrl: "/products/frame-standing-meja.jpg",
-    sizes: ["A4", "A5", "A6"],
+    sizes: ["A3", "A2", "A1"],
   },
   {
-    id: "frame-standing-lantai",
-    name: "Frame Standing Lantai",
-    tagline: "Floor stand untuk pameran & event",
-    description: "Tiang akrilik berdiri untuk display di pameran, showroom, atau event. Tinggi 1 meter.",
+    id: "certificate-frame",
+    name: "Certificate Frame",
+    tagline: "Frame sertifikat dengan kaki/gantung",
+    description: "Frame untuk sertifikat, izin usaha, dan dokumen penting. Tersedia model kaki dan gantung.",
     imageUrl: "/products/frame-standing-lantai.jpg",
-    sizes: ["30x28x100cm"],
+    sizes: ["A4", "A3", "Custom"],
   },
 ];
 
 const whyUs = [
-  { icon: Clock, title: "Tepat Waktu", desc: "98% pengerjaan sesuai deadline. Telat? Ada kompensasi." },
-  { icon: Gift, title: "Free Sample", desc: "Lihat kualitas dulu sebelum order." },
-  { icon: Shield, title: "Garansi Lengkap", desc: "Rusak atau salah produksi? Diganti." },
-  { icon: Check, title: "Tanpa Biaya Siluman", desc: "Harga jelas sejak awal." },
+  { icon: Clock, title: "Harga Terbaik", desc: "Langsung dari workshop tanpa perantara. Harga kompetitif untuk kualitas premium." },
+  { icon: Gift, title: "Free Sample", desc: "Lihat dan rasakan kualitas material sebelum order dalam jumlah banyak." },
+  { icon: Shield, title: "Anti Kuning", desc: "Material akrilik premium yang tidak mudah kuning meski bertahun-tahun." },
+  { icon: Check, title: "Mudah Dipasang", desc: "Sudah termasuk perlengkapan pasang. Bisa install sendiri dalam 5 menit." },
 ];
 
 const testimonials = [
   {
-    name: "Budi Santoso",
-    role: "Manager Operasional",
-    company: "Hotel Grand Malang",
-    content: "Pengerjaan sangat cepat dan tepat waktu. Frame berkualitas dan pengiriman aman. Sudah 3 kali repeat order.",
+    name: "Michael Tanoto",
+    role: "Marketing Manager",
+    company: "Honda Authorized Dealer",
+    content: "Display frame untuk brosur di showroom kami sangat memuaskan. Tampilan premium dan sesuai brand image Honda.",
     rating: 5,
   },
   {
-    name: "Dr. Siti Rahayu",
-    role: "Direktur",
-    company: "RS Medika Sejahtera",
-    content: "Sudah 2 tahun pakai frame dari mereka untuk semua ruang di rumah sakit. Tidak pernah mengecewakan. Recommended!",
+    name: "Lisa Anggraini",
+    role: "Interior Designer",
+    company: "Premium Interiors",
+    content: "Material akrilik berkualitas tinggi. Sudah 2 tahun pakai dan masih bening seperti baru. Highly recommended!",
     rating: 5,
   },
   {
-    name: "Ahmad Fauzi",
+    name: "David Kurniawan",
     role: "Owner",
-    company: "RM Sederhana",
-    content: "Free sample sangat membantu. Bisa lihat kualitas dulu sebelum order banyak. Harga juga kompetitif.",
+    company: "Galeri Foto Jakarta",
+    content: "Frame foto akrilik yang elegan. Pelanggan galeri kami sangat puas dengan hasil frame-nya.",
     rating: 5,
   },
 ];
 
 const painPoints = [
-  { text: "Kertas ditempel langsung ke dinding — terlihat asal-asalan" },
-  { text: "Frame murah cepat rusak dan menguning" },
-  { text: "Tampilan kantor terlihat tidak premium di mata klien" },
-  { text: "Sulit diganti dan dirawat setiap kali ada update" },
+  { text: "Frame akrilik murah cepat menguning dan kusam dalam hitungan bulan" },
+  { text: "Tampilan tidak premium, tidak sesuai dengan brand image produk" },
+  { text: "Mudah retak dan pecah, tidak tahan lama" },
+  { text: "Finishing kasar, tepi tajam dan berbahaya" },
 ];
 
 const beforeAfterItems = [
-  { before: "Kertas ditempel pakai selotip, mudah lepas", after: "Frame akrilik terpasang rapi dengan baut stainless" },
-  { before: "Tampilan kusam dan tidak profesional", after: "Kesan premium dan bersih di mata pengunjung" },
-  { before: "Susah ganti konten, harus lepas & tempel ulang", after: "Sistem buka-tutup mudah, ganti dalam hitungan detik" },
-  { before: "Frame murah cepat menguning dan rusak", after: "Akrilik premium tahan lama, jernih bertahun-tahun" },
+  { before: "Frame murah cepat kuning dan kusam", after: "Akrilik premium tetap bening kristal bertahun-tahun" },
+  { before: "Tampilan murahan tidak sesuai brand", after: "Tampilan premium meningkatkan brand image" },
+  { before: "Mudah retak dan pecah", after: "Material tebal dan kuat, tahan lama" },
+  { before: "Tepi tajam dan kasar", after: "Finishing halus, poles mengkilap seperti kaca" },
 ];
 
 const offerItems = [
-  { icon: Package, text: "Frame akrilik premium berkualitas tinggi" },
+  { icon: Package, text: "Frame akrilik premium material berkualitas tinggi" },
   { icon: Phone, text: "Konsultasi gratis via WhatsApp" },
-  { icon: Gift, text: "Free sample sebelum order" },
-  { icon: Shield, text: "Garansi kerusakan produksi" },
-  { icon: Check, text: "Support dan panduan pemasangan" },
+  { icon: Gift, text: "Free sample untuk lihat kualitas" },
+  { icon: Shield, text: "Garansi material tidak kuning" },
+  { icon: Check, text: "Perlengkapan pasang lengkap" },
 ];
 
 const faqs = [
+  { question: "Apa bedanya akrilik premium dengan akrilik biasa?", answer: "Akrilik premium memiliki kejernihan lebih tinggi (92% light transmission), tidak mudah kuning, dan lebih tahan gores. Akrilik biasa cenderung cepat kusam dan kuning dalam 6-12 bulan." },
+  { question: "Berapa lama pengerjaan frame?", answer: "Pengerjaan standar 3-5 hari kerja. Untuk pesanan urgent atau custom kompleks, kami bisa koordinasikan timeline yang sesuai." },
   { question: "Apakah bisa custom ukuran?", answer: "Bisa! Kami menerima pesanan custom ukuran sesuai kebutuhan Anda. Konsultasikan ukuran yang Anda butuhkan via WhatsApp." },
-  { question: "Berapa lama pengerjaan?", answer: "Pengerjaan standar 3-5 hari kerja. Untuk pesanan urgent, kami bisa proses lebih cepat. 98% pesanan kami selesai tepat waktu." },
   { question: "Apakah ada minimum order?", answer: "Tidak ada minimum order. Anda bisa pesan mulai dari 1 pcs. Untuk order dalam jumlah banyak, tersedia harga spesial." },
-  { question: "Apakah bisa kirim ke luar kota?", answer: "Bisa! Kami melayani pengiriman ke seluruh Indonesia dengan packing kayu yang aman. Sudah banyak klien kami dari luar Jabodetabek." },
-  { question: "Apakah ada garansi?", answer: "Ya, semua produk kami bergaransi. Jika ada kerusakan akibat produksi, kami ganti tanpa biaya tambahan." },
+  { question: "Bagaimana cara pemasangan?", answer: "Setiap frame sudah termasuk perlengkapan pasang lengkap (baut, fisher, spacer). Kami juga sediakan video tutorial pemasangan yang mudah diikuti." },
 ];
 
-export default function LandingPage() {
+export default function AkrilikFramePage() {
   const [activeUseCase, setActiveUseCase] = useState(useCases[0]);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const whatsappLink = "https://wa.me/6281213848845?text=Halo,%20saya%20ingin%20info%20frame%20akrilik";
+  const whatsappLink = "https://wa.me/6281211059138?text=Halo,%20saya%20tertarik%20akrilik%20frame%20berkualitas";
 
   return (
     <main className="min-h-screen bg-white">
@@ -172,6 +172,7 @@ export default function LandingPage() {
         <div className="relative mx-auto max-w-5xl px-6 py-20 md:py-28">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left space-y-6">
+              <p className="text-blue-400 font-medium text-sm">AKRILIK DISPLAY</p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-[1.15]">
                 Akrilik Frame{" "}
                 <span className="text-blue-400">Berkualitas Premium</span>
@@ -180,6 +181,13 @@ export default function LandingPage() {
                 Dapatkan akrilik frame dengan harga terbaik tanpa perantara. Material akrilik premium yang bening kristal, tidak cepat kuning, dan mudah dipasang.
               </p>
 
+              <div className="flex flex-wrap gap-2 pt-2">
+                <span className="rounded-full border border-slate-600 px-4 py-1.5 text-sm text-slate-300">Custom Plakat</span>
+                <span className="rounded-full border border-slate-600 px-4 py-1.5 text-sm text-slate-300">Laser Cutting</span>
+                <span className="rounded-full border border-slate-600 px-4 py-1.5 text-sm text-slate-300">Display Produk</span>
+                <span className="rounded-full border border-slate-600 px-4 py-1.5 text-sm text-slate-300">Signage</span>
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <a
                   href={whatsappLink}
@@ -187,32 +195,23 @@ export default function LandingPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
                 >
-                  <Phone className="h-4 w-4" />
-                  Konsultasi Gratis
-                </a>
-                <a
-                  href={whatsappLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
-                >
-                  <Gift className="h-4 w-4" />
-                  Minta Free Sample
+                  Pesan Sekarang
+                  <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
 
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-5 gap-y-2 text-sm text-slate-400 pt-2">
                 <span className="inline-flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 text-emerald-400" />
-                  Free sample tersedia
+                  Bening kristal
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 text-emerald-400" />
-                  Fast response via WhatsApp
+                  Anti kuning
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 text-emerald-400" />
-                  Tanpa minimum order
+                  Mudah dipasang
                 </span>
               </div>
             </div>
@@ -222,12 +221,12 @@ export default function LandingPage() {
                 <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-500/10">
                   <img
                     src="https://res.cloudinary.com/dicwfbdgz/image/upload/v1770227078/ladingpage_agdll2.webp"
-                    alt="Frame Akrilik Premium"
+                    alt="Akrilik Frame Berkualitas"
                     className="w-full h-full object-cover object-[30%_center]"
                   />
                 </div>
                 <div className="absolute -bottom-3 -left-3 rounded-full border border-slate-700 bg-slate-900 px-4 py-1.5 text-xs font-medium text-blue-400 shadow-lg">
-                  Garansi Lengkap
+                  Premium Quality
                 </div>
               </div>
             </div>
@@ -270,10 +269,10 @@ export default function LandingPage() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-3">
-              Pilih Frame Sesuai Kebutuhan
+              Koleksi Frame Akrilik Premium
             </h2>
             <p className="text-slate-500 max-w-xl mx-auto">
-              Berbagai jenis frame akrilik premium untuk kebutuhan bisnis dan personal.
+              Berbagai pilihan frame akrilik berkualitas untuk display dan dekorasi.
             </p>
           </div>
 
@@ -336,7 +335,7 @@ export default function LandingPage() {
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-500"
             >
               <Phone className="h-4 w-4" />
-              Konsultasi Gratis
+              Tanya Harga & Stok
             </a>
           </div>
         </div>
@@ -347,10 +346,10 @@ export default function LandingPage() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-3">
-              Cocok untuk Berbagai Kebutuhan
+              Cocok untuk Berbagai Kebutuhan Display
             </h2>
             <p className="text-slate-500 max-w-xl mx-auto">
-              Digunakan untuk pengumuman, menu, jadwal, dan informasi penting yang perlu terlihat rapi.
+              Frame akrilik kami digunakan di berbagai industri untuk tampilan yang profesional.
             </p>
           </div>
 
@@ -412,7 +411,7 @@ export default function LandingPage() {
               Sebelum vs Sesudah
             </h2>
             <p className="text-slate-500">
-              Perbedaan nyata yang dirasakan klien kami
+              Perbedaan nyata antara akrilik murah dan akrilik premium
             </p>
           </div>
 
@@ -422,14 +421,14 @@ export default function LandingPage() {
                 <div className="flex items-start gap-3 rounded-lg border border-red-100 bg-red-50/50 p-4">
                   <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-[11px] font-semibold text-red-500 uppercase tracking-wider mb-1">Sebelum</p>
+                    <p className="text-[11px] font-semibold text-red-500 uppercase tracking-wider mb-1">Akrilik Murah</p>
                     <p className="text-sm text-slate-700 leading-relaxed">{item.before}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 rounded-lg border border-emerald-100 bg-emerald-50/50 p-4">
                   <CheckCircle className="h-5 w-5 text-emerald-500 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-[11px] font-semibold text-emerald-600 uppercase tracking-wider mb-1">Sesudah</p>
+                    <p className="text-[11px] font-semibold text-emerald-600 uppercase tracking-wider mb-1">Akrilik Premium</p>
                     <p className="text-sm text-slate-700 leading-relaxed">{item.after}</p>
                   </div>
                 </div>
@@ -444,7 +443,7 @@ export default function LandingPage() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
-              Kenapa Banyak yang Repeat Order?
+              Keunggulan Frame Akrilik Kami
             </h2>
           </div>
 
@@ -467,13 +466,13 @@ export default function LandingPage() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-3">
-              Apa Kata Mereka?
+              Apa Kata Pelanggan?
             </h2>
             <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-medium text-blue-700 mb-3">
               <MessageCircle className="h-3.5 w-3.5" />
-              Dipercaya 500+ kantor, klinik, hotel, dan restoran
+              Dipercaya brand-brand premium
             </div>
-            <p className="text-slate-500 text-sm">Mereka memilih karena ingin hasil aman dan tanpa ribet.</p>
+            <p className="text-slate-500 text-sm">Mereka memilih karena kualitas material yang terjamin.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-4">
@@ -532,7 +531,7 @@ export default function LandingPage() {
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-500"
           >
             <Phone className="h-4 w-4" />
-            Dapatkan Sekarang
+            Pesan Sekarang
           </a>
         </div>
       </section>
@@ -581,13 +580,13 @@ export default function LandingPage() {
       <section className="py-16 md:py-20 border-t border-slate-100">
         <div className="mx-auto max-w-2xl px-6 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-3">
-            Konsultasi Gratis & Dapatkan Free Sample
+            Butuh Frame Akrilik Berkualitas?
           </h2>
           <p className="text-slate-500 mb-2">
-            Tanpa komitmen &bull; Gratis konsultasi
+            Tanpa komitmen &bull; Harga terbaik
           </p>
           <p className="text-xs font-medium text-amber-600 mb-6">
-            Free sample terbatas 20 slot per bulan
+            Free sample tersedia untuk cek kualitas
           </p>
           <a
             href={whatsappLink}
@@ -601,15 +600,15 @@ export default function LandingPage() {
           <div className="mt-6 flex flex-wrap items-center justify-center gap-5 text-xs text-slate-400">
             <span className="inline-flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5 text-blue-500" />
-              Respon dalam 1 jam
+              Respon cepat
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Check className="h-3.5 w-3.5 text-emerald-500" />
-              Free sample
+              Harga terbaik
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Shield className="h-3.5 w-3.5 text-blue-500" />
-              Garansi
+              Garansi kualitas
             </span>
           </div>
         </div>
@@ -620,16 +619,16 @@ export default function LandingPage() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
-              <p className="font-semibold text-white mb-2">Frame Akrilik Premium</p>
-              <p className="text-xs leading-relaxed">Tepat Waktu | Bergaransi | Berkualitas</p>
+              <p className="font-semibold text-white mb-2">Akrilik Display</p>
+              <p className="text-xs leading-relaxed">Frame Akrilik Berkualitas Premium</p>
             </div>
             <div>
               <p className="text-xs font-medium text-white mb-2 inline-flex items-center gap-1.5">
                 <MapPin className="h-3.5 w-3.5" />
-                Kantor Pusat
+                Lokasi Workshop
               </p>
               <p className="text-xs leading-relaxed">
-                Jl. KH. Hasyim Ashari No. 45, RT.004 RW.007, Buaran Indah, Kec. Cipondoh, Kota Tangerang, Banten 15119
+                Jl. KH. Hasyim Ashari No. 45, Tangerang, Banten 15119
               </p>
             </div>
             <div>
@@ -647,12 +646,12 @@ export default function LandingPage() {
                 WhatsApp
               </p>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">
-                +62 812-1384-8845
+                +62 812-1105-9138
               </a>
             </div>
           </div>
           <div className="border-t border-slate-800 pt-6 text-center">
-            <p className="text-[11px] text-slate-500">&copy; 2024 Frame Akrilik Premium. All rights reserved.</p>
+            <p className="text-[11px] text-slate-500">&copy; 2024 Akrilik Display. All rights reserved.</p>
           </div>
         </div>
       </footer>

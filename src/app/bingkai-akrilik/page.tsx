@@ -9,172 +9,173 @@ import {
 
 const useCases = [
   {
-    id: "rumah-sakit",
-    title: "Rumah Sakit",
+    id: "foto-keluarga",
+    title: "Foto Keluarga",
     icon: Building2,
-    description: "Jadwal dokter, informasi layanan, dan arahan pengunjung yang selalu update dan mudah dibaca.",
-    benefits: ["Mudah diupdate", "Tahan lama", "Tampilan rapi"],
-    imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203324/Akrilik_frame_rumah_sakit_nhm1sx.webp",
-  },
-  {
-    id: "hotel",
-    title: "Hotel",
-    icon: Building2,
-    description: "Info fasilitas, welcome guest, dan promo yang terlihat profesional di area resepsionis dan lift.",
-    benefits: ["Tampilan elegan", "Mudah dibaca", "Kesan premium"],
+    description: "Bingkai akrilik elegan untuk foto keluarga, momen spesial, dan kenangan berharga yang dipajang di rumah.",
+    benefits: ["Tampilan mewah", "Tahan lama", "Mudah dibersihkan"],
     imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203324/Akrilik_frame_hotel_hz2mkg.webp",
   },
   {
-    id: "restoran",
-    title: "Restoran",
+    id: "dekorasi",
+    title: "Dekorasi Dinding",
+    icon: Building2,
+    description: "Bingkai premium untuk dekorasi dinding ruang tamu, kamar, atau koridor dengan kesan mewah dan elegan.",
+    benefits: ["Kesan premium", "Anti pudar", "Finishing halus"],
+    imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203324/Akrilik_frame_rumah_sakit_nhm1sx.webp",
+  },
+  {
+    id: "sertifikat",
+    title: "Sertifikat",
     icon: UtensilsCrossed,
-    description: "Menu dan promo yang menarik perhatian pelanggan dan mudah diganti sesuai kebutuhan.",
-    benefits: ["Menu jelas", "Mudah ganti", "Higienis"],
+    description: "Bingkai untuk sertifikat, ijazah, dan penghargaan yang memberikan kesan profesional dan rapi.",
+    benefits: ["Profesional", "Terlindungi", "Prestisius"],
     imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203326/Akrilik_frame_restoran_ddxrj2.webp",
   },
   {
-    id: "office",
-    title: "Office",
+    id: "lukisan",
+    title: "Lukisan & Art",
     icon: Briefcase,
-    description: "Pengumuman internal, info meeting, dan company values yang tampil profesional.",
-    benefits: ["Komunikasi efektif", "Profesional", "Mudah update"],
+    description: "Bingkai akrilik untuk lukisan dan art print dengan perlindungan UV dan tampilan gallery-quality.",
+    benefits: ["UV protection", "Gallery quality", "Borderless look"],
     imageUrl: "https://res.cloudinary.com/dicwfbdgz/image/upload/v1770203325/Akrilik_frame_kantor_dr1ual.webp",
   },
 ];
 
 const products = [
   {
-    id: "frame-dinding",
-    name: "Frame Dinding",
-    tagline: "Wall mount untuk sertifikat & izin usaha",
-    description: "Frame akrilik premium dipasang di dinding dengan baut stainless. Cocok untuk sertifikat halal, izin usaha, penghargaan.",
+    id: "bingkai-dinding",
+    name: "Bingkai Dinding",
+    tagline: "Wall mount dengan baut stainless",
+    description: "Bingkai akrilik premium dipasang di dinding dengan spacer dan baut stainless. Memberikan efek floating elegan.",
     imageUrl: "/products/frame-dinding.jpg",
-    sizes: ["A2", "A3", "A4", "A5", "A6"],
+    sizes: ["4R", "5R", "6R", "8R", "A4", "A3"],
     popular: true,
     label: "Paling Populer",
   },
   {
-    id: "frame-pen",
-    name: "Frame Pen",
-    tagline: "Standing frame untuk sertifikat di meja",
-    description: "Frame dengan kaki untuk ditaruh di meja. Ideal untuk sertifikat, piagam penghargaan, dan dokumen penting.",
+    id: "bingkai-magnet",
+    name: "Bingkai Magnet",
+    tagline: "Sistem magnet mudah ganti foto",
+    description: "Bingkai dengan sistem magnet yang memudahkan ganti foto tanpa buka baut. Tampilan bersih tanpa visible hardware.",
     imageUrl: "/products/frame-pen.jpg",
-    sizes: ["A4", "A5", "A6"],
+    sizes: ["4R", "5R", "6R", "8R"],
     label: "Best Seller",
   },
   {
-    id: "frame-magnet",
-    name: "Frame Magnet",
-    tagline: "Praktis ganti foto dengan sistem magnet",
-    description: "Frame akrilik dengan sistem magnet, mudah buka-tutup untuk ganti foto. Tampilan bersih tanpa baut terlihat.",
+    id: "bingkai-meja",
+    name: "Bingkai Meja",
+    tagline: "Standing frame dengan kaki akrilik",
+    description: "Bingkai dengan kaki akrilik untuk ditaruh di meja, rak, atau console. Stabil dan elegan.",
     imageUrl: "/products/frame-magnet.jpg",
     sizes: ["3R", "4R", "5R", "6R"],
     label: "Favorit",
   },
   {
-    id: "frame-bingkai",
-    name: "Frame Bingkai",
-    tagline: "Frame foto dengan kaki akrilik elegan",
-    description: "Frame foto dengan baut di pojok dan kaki akrilik. Tampilan elegan untuk foto keluarga atau kenangan.",
+    id: "bingkai-floating",
+    name: "Bingkai Floating",
+    tagline: "Efek melayang di dinding",
+    description: "Bingkai dengan efek floating/melayang. Foto terlihat seperti mengambang di dinding. Very Instagram-worthy!",
     imageUrl: "/products/frame-bingkai.jpg",
-    sizes: ["3R", "4R", "5R", "6R"],
+    sizes: ["5R", "6R", "8R", "A4"],
   },
   {
-    id: "frame-standing-meja",
-    name: "Frame Standing Meja",
-    tagline: "Desktop frame dengan base akrilik solid",
-    description: "Standing frame dengan base akrilik tebal di bawah. Kokoh dan elegan untuk meja kerja atau resepsionis.",
+    id: "bingkai-collage",
+    name: "Bingkai Collage",
+    tagline: "Multi foto dalam satu frame",
+    description: "Bingkai dengan multiple openings untuk beberapa foto sekaligus. Cocok untuk koleksi foto atau timeline.",
     imageUrl: "/products/frame-standing-meja.jpg",
-    sizes: ["A4", "A5", "A6"],
+    sizes: ["3 Foto", "4 Foto", "6 Foto"],
   },
   {
-    id: "frame-standing-lantai",
-    name: "Frame Standing Lantai",
-    tagline: "Floor stand untuk pameran & event",
-    description: "Tiang akrilik berdiri untuk display di pameran, showroom, atau event. Tinggi 1 meter.",
+    id: "bingkai-poster",
+    name: "Bingkai Poster",
+    tagline: "Ukuran besar untuk poster & art",
+    description: "Bingkai ukuran besar untuk poster, art print, atau foto berukuran jumbo dengan perlindungan UV.",
     imageUrl: "/products/frame-standing-lantai.jpg",
-    sizes: ["30x28x100cm"],
+    sizes: ["A3", "A2", "A1"],
   },
 ];
 
 const whyUs = [
-  { icon: Clock, title: "Tepat Waktu", desc: "98% pengerjaan sesuai deadline. Telat? Ada kompensasi." },
-  { icon: Gift, title: "Free Sample", desc: "Lihat kualitas dulu sebelum order." },
-  { icon: Shield, title: "Garansi Lengkap", desc: "Rusak atau salah produksi? Diganti." },
-  { icon: Check, title: "Tanpa Biaya Siluman", desc: "Harga jelas sejak awal." },
+  { icon: Clock, title: "Tidak Mudah Kuning", desc: "Material akrilik terbaik yang tetap jernih bertahun-tahun. Tidak seperti akrilik murah yang cepat kuning." },
+  { icon: Shield, title: "Kesan Mewah", desc: "Memberikan kesan mewah dan elegan untuk setiap dekorasi dinding Anda. Premium look guaranteed." },
+  { icon: Check, title: "Finishing Halus", desc: "Tepi halus dan poles mengkilap. Aman dipegang dan tidak melukai tangan." },
+  { icon: Gift, title: "Mudah Dipasang", desc: "Sudah termasuk perlengkapan pasang. Petunjuk jelas, bisa pasang sendiri dalam 5 menit." },
 ];
 
 const testimonials = [
   {
-    name: "Budi Santoso",
-    role: "Manager Operasional",
-    company: "Hotel Grand Malang",
-    content: "Pengerjaan sangat cepat dan tepat waktu. Frame berkualitas dan pengiriman aman. Sudah 3 kali repeat order.",
+    name: "Anita Kusuma",
+    role: "Ibu Rumah Tangga",
+    company: "Jakarta Selatan",
+    content: "Bingkai akrilik-nya bagus banget! Foto keluarga jadi terlihat lebih premium. Sudah 2 tahun dan masih jernih.",
     rating: 5,
   },
   {
-    name: "Dr. Siti Rahayu",
-    role: "Direktur",
-    company: "RS Medika Sejahtera",
-    content: "Sudah 2 tahun pakai frame dari mereka untuk semua ruang di rumah sakit. Tidak pernah mengecewakan. Recommended!",
+    name: "Reza Firmansyah",
+    role: "Photographer",
+    company: "Studio Foto RZ",
+    content: "Untuk klien wedding, saya selalu rekomendasikan bingkai ini. Hasilnya elegan dan tahan lama. Klien puas!",
     rating: 5,
   },
   {
-    name: "Ahmad Fauzi",
-    role: "Owner",
-    company: "RM Sederhana",
-    content: "Free sample sangat membantu. Bisa lihat kualitas dulu sebelum order banyak. Harga juga kompetitif.",
+    name: "Maya Indah",
+    role: "Interior Designer",
+    company: "Design Studio Maya",
+    content: "Material premium dan finishing-nya sangat bagus. Cocok untuk project interior rumah mewah klien saya.",
     rating: 5,
   },
 ];
 
 const painPoints = [
-  { text: "Kertas ditempel langsung ke dinding — terlihat asal-asalan" },
-  { text: "Frame murah cepat rusak dan menguning" },
-  { text: "Tampilan kantor terlihat tidak premium di mata klien" },
-  { text: "Sulit diganti dan dirawat setiap kali ada update" },
+  { text: "Bingkai murah cepat menguning dan merusak tampilan foto" },
+  { text: "Finishing kasar, tepi tajam yang berbahaya" },
+  { text: "Mudah retak dan pecah saat dipasang atau dipindahkan" },
+  { text: "Tampilan murahan tidak sesuai dengan interior rumah" },
 ];
 
 const beforeAfterItems = [
-  { before: "Kertas ditempel pakai selotip, mudah lepas", after: "Frame akrilik terpasang rapi dengan baut stainless" },
-  { before: "Tampilan kusam dan tidak profesional", after: "Kesan premium dan bersih di mata pengunjung" },
-  { before: "Susah ganti konten, harus lepas & tempel ulang", after: "Sistem buka-tutup mudah, ganti dalam hitungan detik" },
-  { before: "Frame murah cepat menguning dan rusak", after: "Akrilik premium tahan lama, jernih bertahun-tahun" },
+  { before: "Bingkai cepat kuning, foto jadi terlihat kusam", after: "Akrilik premium tetap jernih, foto tampil sempurna" },
+  { before: "Tepi tajam dan berbahaya untuk anak-anak", after: "Finishing halus, aman untuk semua anggota keluarga" },
+  { before: "Mudah retak saat dipasang atau jatuh", after: "Material tebal dan kuat, tahan benturan ringan" },
+  { before: "Tampilan murahan merusak estetika ruangan", after: "Kesan mewah dan elegan meningkatkan interior" },
 ];
 
 const offerItems = [
-  { icon: Package, text: "Frame akrilik premium berkualitas tinggi" },
+  { icon: Package, text: "Bingkai akrilik premium anti kuning" },
   { icon: Phone, text: "Konsultasi gratis via WhatsApp" },
-  { icon: Gift, text: "Free sample sebelum order" },
-  { icon: Shield, text: "Garansi kerusakan produksi" },
-  { icon: Check, text: "Support dan panduan pemasangan" },
+  { icon: Gift, text: "Free sample untuk lihat kualitas" },
+  { icon: Shield, text: "Garansi material tidak kuning" },
+  { icon: Check, text: "Perlengkapan pasang lengkap" },
 ];
 
 const faqs = [
-  { question: "Apakah bisa custom ukuran?", answer: "Bisa! Kami menerima pesanan custom ukuran sesuai kebutuhan Anda. Konsultasikan ukuran yang Anda butuhkan via WhatsApp." },
-  { question: "Berapa lama pengerjaan?", answer: "Pengerjaan standar 3-5 hari kerja. Untuk pesanan urgent, kami bisa proses lebih cepat. 98% pesanan kami selesai tepat waktu." },
-  { question: "Apakah ada minimum order?", answer: "Tidak ada minimum order. Anda bisa pesan mulai dari 1 pcs. Untuk order dalam jumlah banyak, tersedia harga spesial." },
-  { question: "Apakah bisa kirim ke luar kota?", answer: "Bisa! Kami melayani pengiriman ke seluruh Indonesia dengan packing kayu yang aman. Sudah banyak klien kami dari luar Jabodetabek." },
-  { question: "Apakah ada garansi?", answer: "Ya, semua produk kami bergaransi. Jika ada kerusakan akibat produksi, kami ganti tanpa biaya tambahan." },
+  { question: "Apakah bingkai ini benar-benar tidak menguning?", answer: "Ya! Kami menggunakan akrilik premium grade dengan UV stabilizer yang mencegah penguningan. Bingkai kami tetap jernih meski digunakan bertahun-tahun." },
+  { question: "Berapa lama pengerjaan bingkai?", answer: "Pengerjaan standar 3-5 hari kerja. Untuk pesanan urgent atau custom kompleks, kami bisa koordinasikan timeline yang sesuai." },
+  { question: "Apakah bisa custom ukuran?", answer: "Bisa! Kami menerima pesanan custom ukuran sesuai kebutuhan foto atau art Anda. Konsultasikan ukuran yang Anda butuhkan via WhatsApp." },
+  { question: "Bagaimana cara pemasangan?", answer: "Setiap bingkai sudah termasuk perlengkapan pasang lengkap (baut, fisher, spacer). Kami juga sediakan video tutorial pemasangan yang mudah diikuti." },
+  { question: "Apakah aman untuk foto yang berharga?", answer: "Sangat aman! Akrilik kami melindungi foto dari debu dan UV. Foto tidak akan pudar atau rusak meski terpasang bertahun-tahun." },
 ];
 
-export default function LandingPage() {
+export default function BingkaiAkrilikPage() {
   const [activeUseCase, setActiveUseCase] = useState(useCases[0]);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const whatsappLink = "https://wa.me/6281213848845?text=Halo,%20saya%20ingin%20info%20frame%20akrilik";
+  const whatsappLink = "https://wa.me/6281387003339?text=Halo,%20saya%20tertarik%20bingkai%20akrilik%20premium";
 
   return (
     <main className="min-h-screen bg-white">
       {/* 1. Hero */}
       <section className="relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(59,130,246,0.15),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(244,63,94,0.15),transparent)]" />
         <div className="relative mx-auto max-w-5xl px-6 py-20 md:py-28">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left space-y-6">
+              <p className="text-rose-400 font-medium text-sm">AKRILIK DISPLAY</p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-[1.15]">
                 Bingkai Akrilik{" "}
-                <span className="text-blue-400">Kualitas Premium</span>
+                <span className="text-rose-400">Kualitas Premium</span>
               </h1>
               <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-lg">
                 Menggunakan material akrilik terbaik yang tidak mudah kuning. Memberikan kesan mewah dan elegan untuk setiap dekorasi dinding Anda.
@@ -185,10 +186,10 @@ export default function LandingPage() {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-rose-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-rose-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-400"
                 >
                   <Phone className="h-4 w-4" />
-                  Konsultasi Gratis
+                  Konsultasi Sekarang
                 </a>
                 <a
                   href={whatsappLink}
@@ -197,37 +198,37 @@ export default function LandingPage() {
                   className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
                 >
                   <Gift className="h-4 w-4" />
-                  Minta Free Sample
+                  Lihat Katalog
                 </a>
               </div>
 
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-5 gap-y-2 text-sm text-slate-400 pt-2">
                 <span className="inline-flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 text-emerald-400" />
-                  Free sample tersedia
+                  Anti kuning
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 text-emerald-400" />
-                  Fast response via WhatsApp
+                  Kesan mewah
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <Check className="h-3.5 w-3.5 text-emerald-400" />
-                  Tanpa minimum order
+                  Finishing halus
                 </span>
               </div>
             </div>
 
             <div className="hidden md:flex items-center justify-center">
               <div className="relative">
-                <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-500/10">
+                <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-rose-500/10">
                   <img
                     src="https://res.cloudinary.com/dicwfbdgz/image/upload/v1770227078/ladingpage_agdll2.webp"
-                    alt="Frame Akrilik Premium"
+                    alt="Bingkai Akrilik Premium"
                     className="w-full h-full object-cover object-[30%_center]"
                   />
                 </div>
-                <div className="absolute -bottom-3 -left-3 rounded-full border border-slate-700 bg-slate-900 px-4 py-1.5 text-xs font-medium text-blue-400 shadow-lg">
-                  Garansi Lengkap
+                <div className="absolute -bottom-3 -left-3 rounded-full border border-slate-700 bg-slate-900 px-4 py-1.5 text-xs font-medium text-rose-400 shadow-lg">
+                  Premium Quality
                 </div>
               </div>
             </div>
@@ -243,7 +244,7 @@ export default function LandingPage() {
             <span className="text-red-500">Cepat Rusak & Menguning?</span>
           </h2>
           <p className="text-slate-500 mb-8">
-            Masalah ini sering terjadi di kantor, klinik, dan area publik:
+            Masalah ini sering terjadi saat beli bingkai akrilik murah:
           </p>
           <div className="grid sm:grid-cols-2 gap-3 text-left mb-8">
             {painPoints.map((point, idx) => (
@@ -258,7 +259,7 @@ export default function LandingPage() {
           </div>
           <a
             href="#products"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 hover:text-blue-500 transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-rose-600 hover:text-rose-500 transition-colors"
           >
             Lihat Solusinya <ArrowRight className="h-4 w-4" />
           </a>
@@ -270,10 +271,10 @@ export default function LandingPage() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-3">
-              Pilih Frame Sesuai Kebutuhan
+              Koleksi Bingkai Akrilik Premium
             </h2>
             <p className="text-slate-500 max-w-xl mx-auto">
-              Berbagai jenis frame akrilik premium untuk kebutuhan bisnis dan personal.
+              Berbagai pilihan bingkai akrilik premium untuk foto, sertifikat, dan dekorasi dinding.
             </p>
           </div>
 
@@ -282,13 +283,13 @@ export default function LandingPage() {
               <div
                 key={product.id}
                 className={`group relative rounded-xl border bg-white overflow-hidden transition-all hover:shadow-md ${
-                  product.popular ? "border-blue-200 ring-1 ring-blue-100" : "border-slate-200"
+                  product.popular ? "border-rose-200 ring-1 ring-rose-100" : "border-slate-200"
                 }`}
               >
                 {(product.popular || product.label) && (
                   <div className="absolute top-3 right-3 flex flex-col items-end gap-1 z-10">
                     {product.popular && (
-                      <span className="rounded-md bg-blue-600 px-2 py-0.5 text-[11px] font-semibold text-white">
+                      <span className="rounded-md bg-rose-600 px-2 py-0.5 text-[11px] font-semibold text-white">
                         TERLARIS
                       </span>
                     )}
@@ -308,7 +309,7 @@ export default function LandingPage() {
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-slate-900">{product.name}</h3>
-                  <p className="text-sm text-blue-600 mt-0.5">{product.tagline}</p>
+                  <p className="text-sm text-rose-600 mt-0.5">{product.tagline}</p>
                   <p className="text-sm text-slate-500 mt-2 leading-relaxed">{product.description}</p>
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     {product.sizes.map((size, i) => (
@@ -333,10 +334,10 @@ export default function LandingPage() {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-500"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-rose-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-rose-500"
             >
               <Phone className="h-4 w-4" />
-              Konsultasi Gratis
+              Tanya Harga & Stok
             </a>
           </div>
         </div>
@@ -350,7 +351,7 @@ export default function LandingPage() {
               Cocok untuk Berbagai Kebutuhan
             </h2>
             <p className="text-slate-500 max-w-xl mx-auto">
-              Digunakan untuk pengumuman, menu, jadwal, dan informasi penting yang perlu terlihat rapi.
+              Dari foto keluarga hingga dekorasi profesional, bingkai akrilik kami siap memenuhi kebutuhan Anda.
             </p>
           </div>
 
@@ -390,7 +391,7 @@ export default function LandingPage() {
                     {activeUseCase.benefits.map((benefit, idx) => (
                       <span
                         key={idx}
-                        className="inline-flex items-center gap-1 rounded-md bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700"
+                        className="inline-flex items-center gap-1 rounded-md bg-rose-50 px-2.5 py-1 text-xs font-medium text-rose-700"
                       >
                         <Check className="h-3 w-3" />
                         {benefit}
@@ -412,7 +413,7 @@ export default function LandingPage() {
               Sebelum vs Sesudah
             </h2>
             <p className="text-slate-500">
-              Perbedaan nyata yang dirasakan klien kami
+              Perbedaan nyata antara bingkai murah dan bingkai premium
             </p>
           </div>
 
@@ -422,14 +423,14 @@ export default function LandingPage() {
                 <div className="flex items-start gap-3 rounded-lg border border-red-100 bg-red-50/50 p-4">
                   <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-[11px] font-semibold text-red-500 uppercase tracking-wider mb-1">Sebelum</p>
+                    <p className="text-[11px] font-semibold text-red-500 uppercase tracking-wider mb-1">Bingkai Murah</p>
                     <p className="text-sm text-slate-700 leading-relaxed">{item.before}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 rounded-lg border border-emerald-100 bg-emerald-50/50 p-4">
                   <CheckCircle className="h-5 w-5 text-emerald-500 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-[11px] font-semibold text-emerald-600 uppercase tracking-wider mb-1">Sesudah</p>
+                    <p className="text-[11px] font-semibold text-emerald-600 uppercase tracking-wider mb-1">Bingkai Premium</p>
                     <p className="text-sm text-slate-700 leading-relaxed">{item.after}</p>
                   </div>
                 </div>
@@ -444,15 +445,15 @@ export default function LandingPage() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
-              Kenapa Banyak yang Repeat Order?
+              Keunggulan Bingkai Akrilik Kami
             </h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {whyUs.map((item, idx) => (
               <div key={idx} className="rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-slate-300">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-blue-50 mb-4">
-                  <item.icon className="h-5 w-5 text-blue-600" />
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-rose-50 mb-4">
+                  <item.icon className="h-5 w-5 text-rose-600" />
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-1">{item.title}</h3>
                 <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
@@ -467,13 +468,13 @@ export default function LandingPage() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-3">
-              Apa Kata Mereka?
+              Apa Kata Pelanggan?
             </h2>
-            <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-medium text-blue-700 mb-3">
+            <div className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-rose-50 px-4 py-1.5 text-xs font-medium text-rose-700 mb-3">
               <MessageCircle className="h-3.5 w-3.5" />
-              Dipercaya 500+ kantor, klinik, hotel, dan restoran
+              Bingkai yang mempercantik banyak rumah
             </div>
-            <p className="text-slate-500 text-sm">Mereka memilih karena ingin hasil aman dan tanpa ribet.</p>
+            <p className="text-slate-500 text-sm">Mereka memilih karena kualitas material yang terjamin.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-4">
@@ -486,7 +487,7 @@ export default function LandingPage() {
                 </div>
                 <p className="text-sm text-slate-600 leading-relaxed mb-4">&ldquo;{testi.content}&rdquo;</p>
                 <div className="flex items-center gap-3">
-                  <div className="flex items-center justify-center w-9 h-9 rounded-full bg-blue-100 text-sm font-semibold text-blue-600">
+                  <div className="flex items-center justify-center w-9 h-9 rounded-full bg-rose-100 text-sm font-semibold text-rose-600">
                     {testi.name[0]}
                   </div>
                   <div>
@@ -516,8 +517,8 @@ export default function LandingPage() {
                 key={idx}
                 className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3.5"
               >
-                <div className="flex items-center justify-center w-8 h-8 rounded-md bg-blue-50 flex-shrink-0">
-                  <item.icon className="h-4 w-4 text-blue-600" />
+                <div className="flex items-center justify-center w-8 h-8 rounded-md bg-rose-50 flex-shrink-0">
+                  <item.icon className="h-4 w-4 text-rose-600" />
                 </div>
                 <span className="text-sm font-medium text-slate-700 flex-1">{item.text}</span>
                 <Check className="h-4 w-4 text-emerald-500 flex-shrink-0" />
@@ -529,10 +530,10 @@ export default function LandingPage() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-500"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-rose-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-rose-500"
           >
             <Phone className="h-4 w-4" />
-            Dapatkan Sekarang
+            Pesan Sekarang
           </a>
         </div>
       </section>
@@ -581,35 +582,35 @@ export default function LandingPage() {
       <section className="py-16 md:py-20 border-t border-slate-100">
         <div className="mx-auto max-w-2xl px-6 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-3">
-            Konsultasi Gratis & Dapatkan Free Sample
+            Percantik Dinding Anda dengan Bingkai Premium
           </h2>
           <p className="text-slate-500 mb-2">
-            Tanpa komitmen &bull; Gratis konsultasi
+            Tanpa komitmen &bull; Free konsultasi
           </p>
           <p className="text-xs font-medium text-amber-600 mb-6">
-            Free sample terbatas 20 slot per bulan
+            Free sample tersedia untuk cek kualitas
           </p>
           <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-8 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-blue-500"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-rose-600 px-8 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-rose-500"
           >
             <Phone className="h-4 w-4" />
             Hubungi via WhatsApp
           </a>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-5 text-xs text-slate-400">
             <span className="inline-flex items-center gap-1.5">
-              <Clock className="h-3.5 w-3.5 text-blue-500" />
-              Respon dalam 1 jam
+              <Clock className="h-3.5 w-3.5 text-rose-500" />
+              Respon cepat
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Check className="h-3.5 w-3.5 text-emerald-500" />
-              Free sample
+              Free konsultasi
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <Shield className="h-3.5 w-3.5 text-blue-500" />
-              Garansi
+              <Shield className="h-3.5 w-3.5 text-rose-500" />
+              Garansi kualitas
             </span>
           </div>
         </div>
@@ -620,16 +621,16 @@ export default function LandingPage() {
         <div className="mx-auto max-w-5xl px-6">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
-              <p className="font-semibold text-white mb-2">Frame Akrilik Premium</p>
-              <p className="text-xs leading-relaxed">Tepat Waktu | Bergaransi | Berkualitas</p>
+              <p className="font-semibold text-white mb-2">Akrilik Display</p>
+              <p className="text-xs leading-relaxed">Bingkai Akrilik Kualitas Premium</p>
             </div>
             <div>
               <p className="text-xs font-medium text-white mb-2 inline-flex items-center gap-1.5">
                 <MapPin className="h-3.5 w-3.5" />
-                Kantor Pusat
+                Lokasi Workshop
               </p>
               <p className="text-xs leading-relaxed">
-                Jl. KH. Hasyim Ashari No. 45, RT.004 RW.007, Buaran Indah, Kec. Cipondoh, Kota Tangerang, Banten 15119
+                Jl. KH. Hasyim Ashari No. 45, Tangerang, Banten 15119
               </p>
             </div>
             <div>
@@ -647,12 +648,12 @@ export default function LandingPage() {
                 WhatsApp
               </p>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">
-                +62 812-1384-8845
+                +62 813-8700-3339
               </a>
             </div>
           </div>
           <div className="border-t border-slate-800 pt-6 text-center">
-            <p className="text-[11px] text-slate-500">&copy; 2024 Frame Akrilik Premium. All rights reserved.</p>
+            <p className="text-[11px] text-slate-500">&copy; 2024 Akrilik Display. All rights reserved.</p>
           </div>
         </div>
       </footer>
